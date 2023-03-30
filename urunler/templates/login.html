@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+   <div class="container">
+    <form action="" method="POST" class="w-50 m-auto border p-4">
+        {% csrf_token %}
+        <label for="">Kullanici Adi</label>
+        <input type="text" name="kullanici" id="" class="form-control">
+        <label for="">Sifre</label>
+        <input type="password" name="sifre" id="" class="form-control">
+        <input type="submit" value="Giris Yap" class="btn-btn">
+    </form>
+   </div>
+
+
+{% endblock content %}
